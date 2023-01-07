@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import * as S from "./style";
+import Link from "next/link";
 
 export default function PageMain() {
 
@@ -17,9 +18,9 @@ export default function PageMain() {
       )}
       <S.Menu>
         <S.Logo src={isMobile? "https://imagensemoldes.com.br/wp-content/uploads/2018/03/Turma-do-Mickey-Mickey-Rosto-Png.png":"https://logodownload.org/wp-content/uploads/2014/04/walt-disney-logo-1.png"} />
-        <a href="/PageInformation">
+        <Link href="/PageInformation">
           <S.Button style={{width: isMobile? "300px": "600px", margin: isMobile? "10px":""}}>All Characters</S.Button>
-        </a>
+        </Link>
       </S.Menu>
     </S.Container>
   );

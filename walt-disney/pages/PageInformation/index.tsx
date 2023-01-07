@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import Characters from "../../components/Characters";
+import Characters from "../../src/components/Characters";
 
 export default function PageInformation() {
   return (

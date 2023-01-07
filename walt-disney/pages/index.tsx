@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PageMain from "../components/Home";
+import PageMain from "../src/components/Home";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
